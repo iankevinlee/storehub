@@ -1,6 +1,7 @@
 <?php
 
 // Version
+//new
 define('VERSION', '1.5.5.1');
 
 // Configuration

@@ -15,6 +15,8 @@ class ModelPaymentPPStandard extends Model {
 			$status = false;
 		}	
 
+		
+		
 		$currencies = array(
 			'AUD',
 			'CAD',
@@ -39,13 +41,15 @@ class ModelPaymentPPStandard extends Model {
 			'PHP',
 			'TWD',
 			'THB',
-			'TRY'
+			'TRY',
+			'CNY'
 		);
 		
 		if (!in_array(strtoupper($this->currency->getCode()), $currencies)) {
 			$status = false;
 		}			
-					
+
+		//$status = true;
 		$method_data = array();
 	
 		if ($status) {  
